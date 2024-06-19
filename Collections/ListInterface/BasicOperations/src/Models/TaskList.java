@@ -6,7 +6,7 @@ import java.util.List;
 public enum TaskList {
     INSTANCE;
     
-    private List<Task> Tasks = new ArrayList<>();
+    private final List<Task> Tasks = new ArrayList<>();
     
     public static TaskList getTaskList(){return INSTANCE;}
 
@@ -24,7 +24,7 @@ public enum TaskList {
     public String FinishTask(String Title){
         int i = 0;
         for (Task task : Tasks) {
-            if (task.getTitle() == Title) {
+            if (task.getTitle().equals(Title)) {
                 Tasks.remove(i);
                 return "Task" + task.getTitle() + " completed";
             }
@@ -35,10 +35,9 @@ public enum TaskList {
     public String RemoveTask(String Title){
         int i = 0;
         for (Task task : Tasks) {
-            if (task.getTitle() == Title) {
-                Task tempTask = task;
+            if (task.getTitle().equals(Title)) {
                 Tasks.remove(i);
-                return "Task " + tempTask.getTitle() + " removed";
+                return "Task " + task.getTitle() + " removed";
             }
             i++;
         }
