@@ -1,2 +1,2 @@
 # java-study
-Diversos cases de estudos sobre a linguagem java, servindo como guia pessoal na utilização para a criação de projetos para o meu portifólio.
+Several case studies on the java language, serving as a personal guide in using it to create projects for my portfolio.
