@@ -1,0 +1,1 @@
+This repository is dedicated to the use of search methods in a Collection List in the Java language.
