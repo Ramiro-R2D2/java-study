@@ -1,0 +1,1 @@
+ mvn -q help:effective-pom -Doutput=\d:\java-study\Java-na-web\myapi\effective-pom.xml -f /d:/java-study/Java-na-web/myapi/pom.xml
